@@ -7,19 +7,6 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
-# Optional
-# If you use googleAnalytics, you set top-level options in config.toml to the beginning of the config file like other top-level options.
-# googleAnalytics = "UA-XXXXXXXX-XX"
-# and disqus too.
-# disqusShortName = "yourdisqusshortname"
-
-#[params.goatcounter]
-#  domain="stats.domain.com"
-
-#[params.matomo]
-#  domain="stats.domain.com"
-#  id="123"
-
 [Author]
   name = "Marcel Walk"
 
@@ -61,16 +48,14 @@ footnoteReturnLinkContents = "^"
   url = "archives"
   weight = 3
 
-# copy paste this block and change for each social media to add how many ever social media
-# acounts/links you want
 [[params.social]]
   name="GitHub"
-  url="li"
+  url="https://github.com/MarcelWalk"
   icon="fa-brands fa-github fa-lg"
 
 [[params.social]]
   name="LinkedIn"
-  url="link to social media"
+  url="https://www.linkedin.com/in/marcel-walk/"
   icon="fa-brands fa-linkedin fa-lg"
 
 [params.logo]
