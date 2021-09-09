@@ -9,7 +9,9 @@ footnoteReturnLinkContents = "^"
 
 [Author]
   name = "Marcel Walk"
-
+[permalinks]
+	post = "/:year/:month/:day/:filename/"
+	page = "/:filename/"
 [outputs]
   section = ["JSON", "HTML"]
 
@@ -24,7 +26,7 @@ footnoteReturnLinkContents = "^"
   identifier = "tags"
   name = "Tags"
   icon = "fas fa-tag fa-lg"
-  url = "tags"
+  url = "/tags/"
   weight = 3
 
 [[params.nav]]
@@ -38,29 +40,28 @@ footnoteReturnLinkContents = "^"
   identifier = "search"
   name = "Search"
   icon = "fas fa-search fa-lg"
-  url = "search"
+  url = "/search/"
   weight = 3
 
 [[params.nav]]
   identifier = "archives"
   name = "Archives"
   icon = "fas fa-archive fa-lg"
-  url = "archives"
+  url = "/archives/"
   weight = 3
 
 [[params.social]]
   name="GitHub"
   url="https://github.com/MarcelWalk"
-  icon="fa-brands fa-github fa-lg"
+  icon="fab fa-github fa-lg"
 
 [[params.social]]
   name="LinkedIn"
   url="https://www.linkedin.com/in/marcel-walk/"
-  icon="fa-brands fa-linkedin fa-lg"
+  icon="fab fa-linkedin fa-lg"
 
 [params.logo]
-  url = "icon.png" # static/images/icon.png
+  url = "icon.png"
   width = 50
   height = 50
   alt = "Logo"
-
