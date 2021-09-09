@@ -1,6 +1,6 @@
 theme = "harbor"
 baseurl = "https://nyasaki.dev/"
-title = "Nyasaki Dev Blog"
+title = "Dev Blog"
 paginate = 5
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -9,9 +9,11 @@ footnoteReturnLinkContents = "^"
 
 [Author]
   name = "Marcel Walk"
+
 [permalinks]
 	post = "/:year/:month/:day/:filename/"
 	page = "/:filename/"
+  
 [outputs]
   section = ["JSON", "HTML"]
 
