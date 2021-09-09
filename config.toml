@@ -1,5 +1,5 @@
 theme = "harbor"
-baseurl = "https://nyasaki.dev/"
+baseurl = "nyasaki.dev"
 title = "Dev Blog"
 paginate = 5
 languageCode = "en"
@@ -13,7 +13,7 @@ footnoteReturnLinkContents = "^"
 [permalinks]
 	post = "/:year/:month/:day/:filename/"
 	page = "/:filename/"
-  
+
 [outputs]
   section = ["JSON", "HTML"]
 
