@@ -1,4 +1,4 @@
-baseurl = "https://nyasaki.dev/"
+baseurl = "https://www.nyasaki.dev/"
 theme = "harbor"
 title = "Dev Blog"
 author = "Marcel Walk"
