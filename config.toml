@@ -1,56 +1,85 @@
-baseURL = "http://nyasaki.dev/"
+baseURL = "https://lines-hugo-theme.netlify.app/"
 languageCode = "en-us"
-title = "Marcel Walk"
-theme = "minimal-theme"
-googleAnalytics = ""
+title = "Lines - Minimalist Hugo theme"
+disableKinds = ["section", "categories"]
+disqusShortname = ""
+pygmentsCodeFences = false
+pygmentsUseClasses = false
+paginate = 999
+minify = true
+
+
+[taxonomies]
+  tag = "tags"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[Author]
+  name = ""
 
 [params]
-    author = "Marcel Walk"
-    description = "Software Developer and Sysadmin from Austria"
-    githubUsername = "MarcelWalk"
-    accent = "blue"
-    showBorder = true
-    backgroundColor = "white"
-    font = "Raleway" # should match the name on Google Fonts!
-    highlight = true
-    highlightStyle = "default"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+  description = ""
+  author = ""
+  copyright = ""
+  logo = ""
 
-[[menu.main]]
-    url = "/"
-    name = "Home"
-    weight = 1
+[frontmatter]
+  date  = [":filename", ":default"]
+  author = ""
+  github = ""
+  facebook = ""
+  og_image = ""
+  sitename = ""
+  twitter = ""
 
-[[menu.main]]
-    url = "/about/"
-    name = "About"
-    weight = 2
+[permalinks]
+  posts = "/:year/:month/:day/:filename"
+  pages = "/:slug"
 
-[[menu.main]]
-    url = "/post/"
-    name = "Posts"
-    weight = 3
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML"]
 
-[[menu.main]]
-    url = "/project/"
-    name = "Projects"
-    weight = 4
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "atom"
 
-# Social icons to be shown on the right-hand side of the navigation bar.
-# The "name" field should match the name of the icon in Font Awesome.
-# The list of available icons can be found at http://fontawesome.io/icons.
+[outputFormats.JSON]
+  mediatype = "application/json"
+  baseName = "feed"
 
-[[menu.icon]]
-    url = "mailto:me@example.com"
-    name = "fas fa-envelope"
-    weight = 1
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
-[[menu.icon]]
-    url = "https://github.com/MarcelWalk/"
-    name = "fab fa-github"
-    weight = 2
+[menu]
+  [[menu.main]]
+    identifier = "index"
+    name       = "Index"
+    url        = "/"
+    weight     = -111
 
-[[menu.icon]]
-    url = "https://www.linkedin.com/in/marcel-walk/"
-    name = "fab fa-linkedin"
-    weight = 4
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about/"
+    weight     = -20
+
+  [[menu.main]]
+    identifier = "rss"
+    name       = "RSS"
+    url        = "/atom.xml"
+    weight     = -10
