@@ -2,7 +2,6 @@ baseURL = "http://nyasaki.dev/"
 languageCode = "en-us"
 title = "Marcel Walk"
 theme = "minimal"
-disqusShortname = "username" # delete this to disable disqus comments
 googleAnalytics = ""
 
 [params]
