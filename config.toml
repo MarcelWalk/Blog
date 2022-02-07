@@ -1,13 +1,12 @@
-baseURL = "https://lines-hugo-theme.netlify.app/"
+baseURL = "https://nyasaki.dev/"
 languageCode = "en-us"
-title = "Lines - Minimalist Hugo theme"
+title = "Marcel Walk"
 disableKinds = ["section", "categories"]
 disqusShortname = ""
 pygmentsCodeFences = false
 pygmentsUseClasses = false
 paginate = 999
 minify = true
-
 
 [taxonomies]
   tag = "tags"
@@ -27,11 +26,11 @@ minify = true
     disable = true
 
 [Author]
-  name = ""
+  name = "Marcel Walk"
 
 [params]
   description = ""
-  author = ""
+  author = "Marcel Walk"
   copyright = ""
   logo = ""
 
@@ -71,6 +70,12 @@ minify = true
     name       = "Index"
     url        = "/"
     weight     = -111
+
+  [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "/tags/"
+    weight     = -30
 
   [[menu.main]]
     identifier = "about"
