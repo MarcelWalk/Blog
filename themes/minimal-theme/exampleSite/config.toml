@@ -1,14 +1,15 @@
-baseURL = "http://nyasaki.dev/"
+baseURL = "http://example.com/"
 languageCode = "en-us"
-title = "Marcel Walk"
-theme = "minimal-theme"
+title = "Minimal"
+theme = "minimal"
+disqusShortname = "username" # delete this to disable disqus comments
 googleAnalytics = ""
 
 [params]
-    author = "Marcel Walk"
-    description = "Software Developer and Sysadmin from Austria"
-    githubUsername = "MarcelWalk"
-    accent = "blue"
+    author = "Calin Tataru"
+    description = "Personal blog theme powered by Hugo"
+    githubUsername = "#"
+    accent = "red"
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
@@ -46,11 +47,21 @@ googleAnalytics = ""
     weight = 1
 
 [[menu.icon]]
-    url = "https://github.com/MarcelWalk/"
+    url = "https://github.com/username/"
     name = "fab fa-github"
     weight = 2
 
 [[menu.icon]]
-    url = "https://www.linkedin.com/in/marcel-walk/"
+    url = "https://twitter.com/username/"
+    name = "fab fa-twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/username/"
     name = "fab fa-linkedin"
     weight = 4
+
+[[menu.icon]]
+    url = "https://www.stackoverflow.com/username/"
+    name = "fab fa-stack-overflow"
+    weight = 5
