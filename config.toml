@@ -1,68 +1,57 @@
-baseurl = "https://nyasaki.dev/"
-theme = "harbor"
-title = "Dev Blog"
-author = "Marcel Walk"
-paginate = 5
-languageCode = "en"
-DefaultContentLanguage = "en"
-enableInlineShortcodes = true
-footnoteReturnLinkContents = "^"
-enableEmoji = true
-
-[Author]
-  name = "Marcel Walk"
-
-[permalinks]
-	post = "/:year/:month/:day/:filename/"
-	page = "/:filename/"
-  
-[outputs]
-  section = ["JSON", "HTML"]
-
-[[params.nav]]
-  identifier = "about"
-  name = "About"
-  icon = "fas fa-user fa-lg"
-  url = "/about/"
-  weight = 3
-
-[[params.nav]]
-  identifier = "tags"
-  name = "Tags"
-  icon = "fas fa-tag fa-lg"
-  url = "/tags/"
-  weight = 3
-
-[[params.nav]]
-  identifier = "search"
-  name = "Search"
-  icon = "fas fa-search fa-lg"
-  url = "/search/"
-  weight = 3
-
-[[params.nav]]
-  identifier = "archives"
-  name = "Archives"
-  icon = "fas fa-archive fa-lg"
-  url = "/archives/"
-  weight = 3
-
-[[params.social]]
-  name="GitHub"
-  url="https://github.com/MarcelWalk"
-  icon="fab fa-github fa-lg"
-
-[[params.social]]
-  name="LinkedIn"
-  url="https://www.linkedin.com/in/marcel-walk/"
-  icon="fab fa-linkedin fa-lg"
+baseURL = "http://nyasaki.dev/"
+languageCode = "en-us"
+title = "Marcel Walk"
+theme = "minimal"
+disqusShortname = "username" # delete this to disable disqus comments
+googleAnalytics = ""
 
 [params]
-  mainSections = ["post"]
-  favicon = "favicon.ico"
+    author = "Marcel Walk"
+    description = "Software Developer and Sysadmin from Austria"
+    githubUsername = "MarcelWalk"
+    accent = "blue"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "default"
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
 
-[params.logo]
-  url = "icon.png"
-  width = 50
-  height = 50
-  alt = "Logo"
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 3
+
+[[menu.main]]
+    url = "/project/"
+    name = "Projects"
+    weight = 4
+
+# Social icons to be shown on the right-hand side of the navigation bar.
+# The "name" field should match the name of the icon in Font Awesome.
+# The list of available icons can be found at http://fontawesome.io/icons.
+
+[[menu.icon]]
+    url = "mailto:me@example.com"
+    name = "fas fa-envelope"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/MarcelWalk/"
+    name = "fab fa-github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/marcel-walk/"
+    name = "fab fa-linkedin"
+    weight = 4
