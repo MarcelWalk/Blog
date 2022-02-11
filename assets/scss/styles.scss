@@ -17,7 +17,7 @@ body {
     margin-left: .5rem;
     height: 1px;
     border: none;
-    border-bottom: 1px #353535;
+    border-bottom: 1px #343b40;
     flex: 1 0 1rem;
     //opacity: .25;
 }
@@ -54,7 +54,7 @@ code,pre {
 	color: whitesmoke;
 	font-family: San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 	font-size: normal;
-	border: 1px solid whitesmoke;
+	border: 1px solid #343b40;
     font-size: small;
 }
 
@@ -74,11 +74,11 @@ pre code {
 
 img {
 	max-width:100%;
-	border: 1px solid #353535;
+	border: 1px solid #343b40;
 }
 
 hr {
-	background: #353535;
+	background: #343b40;
     height: 1px;
     border: 0;
 }
@@ -116,7 +116,7 @@ header,section, footer {
 }
 
 blockquote {
-    border-left: 5px solid #353535;
+    border-left: 5px solid #343b40;
     padding-left: 1rem;
 }
 .posts ul,header ul, footer ul {
