@@ -7,6 +7,7 @@
 body {
 	font: 1rem/1.5 -apple-system,BlinkMacSystemFont,"avenir next",avenir,helvetica,"helvetica neue",ubuntu,roboto,noto,"segoe ui",arial,sans-serif;
 	text-rendering:optimizeSpeed;
+	background-color: #23272A;
 }
 
 .posts hr {
@@ -29,12 +30,15 @@ main {
 }
 
 a, body {
-	color: #353535;
+	color: whitesmoke;
 }
 
 ::selection, a:focus, a:hover {
-	background-color: #353535;
-	color: #fff;
+	//background-color: #353535;
+	//color: #fff;
+	//color: aqua;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 .meta {
@@ -47,10 +51,10 @@ a, body {
 }
 
 code,pre {
-	color: #353535;
+	color: whitesmoke;
 	font-family: San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 	font-size: normal;
-	border: 1px solid #353535;
+	border: 1px solid whitesmoke;
     font-size: small;
 }
 
@@ -103,8 +107,8 @@ header ul, footer ul {
 
 
 [aria-current="page"] {
-	//font-weight: bold;
-	text-decoration: line-through;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 header,section, footer {
@@ -155,7 +159,7 @@ table {
     width: 100%;
 }
 table tr {
-    background: white;
+    background: #23272A;
     border-bottom: 1px solid
 }
 table th, table td {
