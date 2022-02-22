@@ -40,7 +40,7 @@ a {
 	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
   a:hover {
-	color: #fff;
+	color: whitesmoke;
 	box-shadow: inset 200px 0 0 0 #7754d6;
   }
 
@@ -118,8 +118,8 @@ header ul, footer ul {
 
 
 [aria-current="page"] {
-	font-weight: bold;
-	text-decoration: underline;
+	color: whitesmoke;
+	box-shadow: inset 200px 0 0 0 #7754d6;
 }
 
 header,section, footer {
